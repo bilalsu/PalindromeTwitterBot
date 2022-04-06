@@ -2,10 +2,10 @@ import tweepy
 import time
 
 
-CONSUMER_KEY = 'QsOhD9aP6UYDqWUhBCdYRGZPi'
-CUNSUMER_SECRET = 'ngEpWLUzhvGrvrOTYGmcqI7e6B12XkfZg5UgtrGJh8MUBi0hbn'
-ACCESS_KEY = '1489420375284924416-XHHHF2kj2QsHvQ1VoLs4YtOnH5c6rU'
-ACCESS_SECRET = '4j8hRnAURg08BTqHa3o1rQIAyiYuWBbVhiqG3DUSlaqdo'
+CONSUMER_KEY = #Removed for secruty purposes
+CUNSUMER_SECRET = #Removed for secruty purposes
+ACCESS_KEY = #Removed for secruty purposes
+ACCESS_SECRET = #Removed for secruty purposes
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CUNSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
