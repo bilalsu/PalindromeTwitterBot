@@ -30,7 +30,7 @@ def isPalindrome(tweet):
         return palindrome
 
 
-FILE_NAME = "src/last_seen.txt"
+FILE_NAME = "last_seen.txt"
 
 def read_last_seen(FILE_NAME):
     file_read = open(FILE_NAME, 'r')
@@ -50,7 +50,6 @@ def run():
 
 
 
-#to get tweets with a specific hashtag
     for tweet in reversed(tweets):
         if '#check' in tweet.full_text.lower():
             tweetText = tweet.full_text
@@ -59,7 +58,6 @@ def run():
             tweetText = str(tweetText)
             print(tweetText)
             isPalindrome(tweetText)
-            # print(str(tweet.id) + " - " + tweet.full_text)
             api.update_status('@' + tweet.user.screen_name + " " + isPalindrome(tweetText).replace("[","").replace("]","").replace(",","").replace("\'",""), tweet.id)
             store_last_seen(FILE_NAME, tweet.id)
 
